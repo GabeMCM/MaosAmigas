@@ -1,0 +1,32 @@
+{
+  "module": "src/shared/value-object",
+  "description": "Criação de um tipo para não usar tipo primitivo String",
+  "developement": {
+    "className": "Email",
+    "descriptionClass": "Classe para criação do tipo email dentro da aplicação, gerenciando emails e validando para evitar criação indevida de cadastros",
+    "attributes": [
+      {
+        "name": "email",
+        "type": "string",
+        "required": true,
+        "default": null,
+        "description": "email que será verificado ao ser instanciada a classe"
+      }
+    ],
+    "methods": [
+      {
+        "name": "check",
+        "parameters": ["email"],
+        "description": "metodo que verifica se o email atende as regras",
+        "rules": [
+          "email precisa ter @ e . depois do @, e não pode conter letras maiúsculas.",
+          "precisa ser verificado como um email legítimo."
+        ]
+      }
+    ],
+  "rules":[
+    "Pode usar libs externas na criação desta classe",
+    "Deve criar o teste para esta classe."
+  ]
+  }
+}
