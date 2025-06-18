@@ -1,0 +1,33 @@
+{
+  "module": "src/shared/value-object",
+  "description": "Criação de um tipo para não usar tipo primitivo String",
+  "developement": {
+    "className": "BirthDate",
+    "descriptionClass": "Classe para criação do tipo BirthDate dentro da aplicação, gerenciando BirthDate e validando para evitar criação indevida de cadastros",
+    "attributes": [
+      {
+        "name": "BirthDate",
+        "type": "string",
+        "required": true,
+        "default": null,
+        "description": "BirthDate que será verificado ao ser instanciada a classe"
+      }
+    ],
+    "methods": [
+      {
+        "name": "check",
+        "parameters": ["BirthDate"],
+        "description": "metodo que verifica se o BirthDate atende as regras",
+        "rules": [
+          "BirthDate precisa 8 digitos, e deve ter formato DD/MM/AAAA.",
+          "precisa ser verificado como um BirthDate legítimo.",
+          "não pode ser do ano vigente"
+        ]
+      }
+    ],
+  "rules":[
+    "Pode usar libs externas na criação desta classe",
+    "Deve criar o teste para esta classe."
+  ]
+  }
+}

@@ -1,5 +1,5 @@
 // tests/core/value-objects/id.spec.ts
-import { Id } from '../../../src/core/value-objects/id';             // [DEPURAÇÃO] Importa a classe Id para testes
+import { Id } from './id';             // [DEPURAÇÃO] Importa a classe Id para testes
 import { v4 as uuidv4, validate as uuidValidate } from 'uuid';      // [DEPURAÇÃO] Importa funções da lib uuid para auxílio nos testes
 
 describe('Id Value Object', () => {                                 // [DEPURAÇÃO] Suite de testes para o Value Object Id

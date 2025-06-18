@@ -1,6 +1,6 @@
 // tests/core/value-objects/name.spec.ts
 
-import { Name } from '../../../src/core/value-objects/name';         // [DEPURAÇÃO] Importa a classe Name para teste
+import { Name } from './name';         // [DEPURAÇÃO] Importa a classe Name para teste
 
 describe('Name Value Object', () => {                                // [DEPURAÇÃO] Suite de testes para o Value Object Name
   test('Should create valid name', () => {                           // [DEPURAÇÃO] Teste para criação de nome válido
