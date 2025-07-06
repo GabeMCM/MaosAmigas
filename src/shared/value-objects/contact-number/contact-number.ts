@@ -65,7 +65,7 @@ export class ContactNumber {                                      // [DEPURAÇÃ
     return this._floatValue;                                        // [DEPURAÇÃO] Retorna 000.000.0000
   }
 
-  public equals(other: NumberOfContact): boolean {                  // [DEPURAÇÃO] Compara igualdade
+  public equals(other: ContactNumber): boolean {                  // [DEPURAÇÃO] Compara igualdade
     return this._simpleValue === other.simpleValue;                 // [DEPURAÇÃO] Compara por dígitos
   }
 

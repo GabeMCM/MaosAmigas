@@ -33,7 +33,7 @@ describe('Cpf Value Object', () => {                                // [DEPURAÇ
   test('Equals method should compare values correctly', () => {     // [DEPURAÇÃO] Teste para método equals
     const cpf1 = new Cpf('52998224725');                           // [DEPURAÇÃO] Primeira instância
     const cpf2 = new Cpf('529.982.247-25');                        // [DEPURAÇÃO] Segunda instância (mesmo CPF formatado)
-    const cpf3 = new Cpf('12345678909');                           // [DEPURAÇÃO] Terceira instância (CPF diferente)
+    const cpf3 = new Cpf(cpf.generate());                           // [DEPURAÇÃO] Terceira instância (CPF diferente)
     
     expect(cpf1.equals(cpf2)).toBe(true);                          // [DEPURAÇÃO] Verifica igualdade entre instâncias iguais
     expect(cpf1.equals(cpf3)).toBe(false);                         // [DEPURAÇÃO] Verifica diferença entre instâncias distintas

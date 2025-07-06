@@ -1,5 +1,6 @@
 // tests/core/value-objects/birth-date.spec.ts
 import { BirthDate } from './birth-date'; // [DEPURAÇÃO] Importa classe para teste
+import { format } from 'date-fns';
 
 describe('BirthDate Value Object', () => {                           // [DEPURAÇÃO] Suite de testes para BirthDate
   test('Should create valid BirthDate', () => {                      // [DEPURAÇÃO] Teste para criação válida

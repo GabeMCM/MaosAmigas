@@ -16,10 +16,11 @@ export class BirthDate {                                            // [DEPURAÇ
       throw new Error('BirthDate must be in DD/MM/YYYY format');    // [DEPURAÇÃO] Lança erro para formato inválido
     }
 
-    const parsedDate = parse(dateString);                           // [DEPURAÇÃO] Converte para objeto Date
+    const [day, month, year] = dateString.split('/').map(Number);
+    const parsedDate = new Date(year, month - 1, day);
 
-    if (!isValid(parsedDate)) {                                     // [DEPURAÇÃO] Verifica se data é válida
-      throw new Error('Invalid BirthDate');                         // [DEPURAÇÃO] Lança erro para data inválida
+    if (!isValid(parsedDate) || parsedDate.getDate() !== day || parsedDate.getMonth() !== month - 1 || parsedDate.getFullYear() !== year) {
+      throw new Error('Invalid BirthDate');
     }
 
     const currentDate = new Date();                                 // [DEPURAÇÃO] Obtém data atual

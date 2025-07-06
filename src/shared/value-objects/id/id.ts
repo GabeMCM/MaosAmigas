@@ -9,8 +9,12 @@ export class Id {                                                   // [DEPURAÇ
   private readonly _value: string;                                  // [DEPURAÇÃO] Armazena o valor interno do ID de forma imutável
 
   constructor(value?: string) {                                     // [DEPURAÇÃO] Construtor da classe Id, permite criar um ID a partir de um valor existente ou gerar um novo
-    if (value && Id.isValid(value)) {                               // [DEPURAÇÃO] Se um valor for passado e for um UUID válido
-      this._value = value;                                          // [DEPURAÇÃO] Define o ID com o valor fornecido
+    if (value) {
+      if (Id.isValid(value)) {
+        this._value = value;
+      } else {
+        throw new Error('Invalid UUID format');
+      }
     } else {
       this._value = Id.generate();                                  // [DEPURAÇÃO] Caso contrário, gera um novo ID aleatório e único
     }

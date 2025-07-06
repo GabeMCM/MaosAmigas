@@ -9,15 +9,16 @@ export class Email {                                                 // [DEPURA�
   }
 
   private check(email: string): string {                             // [DEPURAÇÃO] Método privado com regras de validação
-    if (!validator.isEmail(email)) {                                 // [DEPURAÇÃO] Verifica formato básico de email
+    const trimmedEmail = email.trim();
+    if (!validator.isEmail(trimmedEmail)) {                                 // [DEPURAÇÃO] Verifica formato básico de email
       throw new Error('Invalid email format');                       // [DEPURAÇÃO] Lança erro para formato inválido
     }
 
-    if (email !== email.toLowerCase()) {                             // [DEPURAÇÃO] Verifica se contém maiúsculas
+    if (trimmedEmail !== trimmedEmail.toLowerCase()) {                             // [DEPURAÇÃO] Verifica se contém maiúsculas
       throw new Error('Email cannot contain uppercase letters');     // [DEPURAÇÃO] Lança erro para letras maiúsculas
     }
 
-    return email.trim();                                             // [DEPURAÇÃO] Retorna email validado sem espaços
+    return trimmedEmail;                                             // [DEPURAÇÃO] Retorna email validado sem espaços
   }
 
   public get value(): string {                                       // [DEPURAÇÃO] Getter para acessar o email validado

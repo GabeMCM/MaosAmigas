@@ -1,0 +1,87 @@
+project:
+  name: MaosAmigas
+  description: Plataforma leve e escalável para gestão de beneficiários, atendimentos, doações e voluntários, com sincronização offline.
+
+  language: TypeScript
+  architecture:
+    - DDD
+    - Clean Architecture
+    - Functional Core / Imperative Shell
+
+  principles:
+    - SOLID
+    - KISS
+    - YAGNI
+    - DRY
+    - Object Calisthenics
+
+  patterns:
+    - Value Object (classe)
+    - Entity (classe)
+    - Use Case (função pura)
+    - Repository Interface (função pura)
+    - Validator
+    - Controller
+
+  code:
+    typed: true
+    strictMode: true
+    comments: Comentários devem ser de depuração, detalhando o que acontece em cada parte da execução, escritos acima da linha à qual se referem. Ex: //[const resultado = x + y] → soma os valores de entrada
+    formatting:
+      naming:
+        classes: PascalCase
+        attributes: camelCase
+        constants: UPPER_SNAKE_CASE
+      alignment: true
+      lineLength: 100
+    idStrategy: UUIDv4
+
+  folders:
+    base: src/
+    structure:
+      core:
+        description: Regras de negócio e domínio
+        subfolders:
+          - value-objects
+          - entities
+          - use-cases
+          - validators
+          - repositories
+      infrastructure:
+        description: Implementações externas e banco
+        subfolders:
+          - database
+          - services
+          - auth
+      application:
+        description: Camada de orquestração e entrega
+        subfolders:
+          - controllers
+          - dtos
+      shared:
+        description: Utilitários e tipos globais
+        subfolders:
+          - utils
+          - interfaces
+          - config
+    visual:
+      description: Camada client-side (frontend)
+      subfolders:
+        - components
+        - pages
+        - stores
+        - styles
+
+  testing:
+    enabled: true
+    framework: vitest
+    coverageRequired: 80
+
+  generation:
+    outputPerBlock: true
+    fileStructure:
+      value-objects: src/core/value-objects/{nome}.vo.ts
+      entities: src/core/entities/{nome}.entity.ts
+      use-cases: src/core/use-cases/{nome}.usecase.ts
+      validators: src/core/validators/{nome}.validator.ts
+      repositories: src/core/repositories/{nome}.repo.ts
