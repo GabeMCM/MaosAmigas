@@ -1,5 +1,5 @@
 // tests/core/value-objects/cpf.spec.ts
-import { Cpf } from './cpf';           // [DEPURAÇÃO] Importa a classe Cpf para testes
+import { Cpf } from './cpf.vo';           // [DEPURAÇÃO] Importa a classe Cpf para testes
 import { cpf } from 'cpf-cnpj-validator';                           // [DEPURAÇÃO] Importa lib de validação para auxílio nos testes
 
 describe('Cpf Value Object', () => {                                // [DEPURAÇÃO] Suite de testes para o Value Object Cpf

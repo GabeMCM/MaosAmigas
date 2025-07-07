@@ -1,8 +1,8 @@
 // tests/shared/value-objects/contact/contact.spec.ts
-import { Contact } from '../../../../src/shared/value-objects/contact/contact';
-import { Email } from '../../../../src/shared/value-objects/email/email';
-import { ContactNumber } from '../../../../src/shared/value-objects/contact-number/contact-number';
-import { Address } from '../../../../src/shared/value-objects/address/address';
+import { Contact } from './user-contact.vo';
+import { Email } from './email/email.vo';
+import { ContactNumber } from './contact-number/contact-number.vo';
+import { Address } from './address/address.vo';
 
 describe('Contact Value Object', () => {
   test('Should create a valid contact', () => {

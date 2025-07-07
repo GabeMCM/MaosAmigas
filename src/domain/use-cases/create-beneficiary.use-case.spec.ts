@@ -1,11 +1,11 @@
 import { createBeneficiary } from '../../../src/domain/use-cases/create-beneficiary.use-case';
 import { BeneficiaryRepository } from '../../../src/domain/repositories/beneficiary.repository';
 import { Beneficiary } from '../../../src/domain/entities/beneficiary';
-import { Name } from '../../../src/shared/value-objects/name/name';
-import { Cpf } from '../../../src/shared/value-objects/cpf/cpf';
-import { BirthDate } from '../../../src/shared/value-objects/birth-date/birth-date';
-import { Contact } from '../../../src/shared/value-objects/contact/contact';
-import { Email } from '../../../src/shared/value-objects/email/email';
+import { Name } from '../../shared/value-objects/user-info/name/name.vo';
+import { Cpf } from '../../shared/value-objects/user-info/cpf/cpf.vo';
+import { BirthDate } from '../../shared/value-objects/user-info/birth-date/birth-date.vo';
+import { Contact } from '../../shared/value-objects/user-contact/user-contact.vo';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 import { Id } from '../../../src/shared/value-objects/id/id';
 import { Password } from '../../../src/shared/value-objects/password/password';
 import { cpf } from 'cpf-cnpj-validator';

@@ -1,7 +1,7 @@
 // src/shared/value-objects/contact/contact.ts
-import { Email } from '../email/email';
-import { ContactNumber } from '../contact-number/contact-number';
-import { Address } from '../address/address';
+import { Email } from './email/email.vo';
+import { ContactNumber } from './contact-number/contact-number.vo';
+import { Address } from './address/address.vo';
 
 export class Contact {
   private readonly _email?: Email;

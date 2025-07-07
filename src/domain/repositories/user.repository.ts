@@ -2,7 +2,7 @@
 // [import { User } from '../entities/user'] → Importa a entidade User
 import { User } from '../entities/user';
 // [import { Email } from '../../shared/value-objects/email/email'] → Importa o VO Email
-import { Email } from '../../shared/value-objects/email/email';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 
 // [export interface UserRepository] → Define a interface para o repositório de usuários
 export interface UserRepository {

@@ -2,8 +2,8 @@
 import { validateBeneficiary } from '../../../src/domain/validators/beneficiary.validator';
 import { Beneficiary } from '../../../src/domain/entities/beneficiary';
 import { Id } from '../../../src/shared/value-objects/id/id';
-import { Name } from '../../../src/shared/value-objects/name/name';
-import { Email } from '../../../src/shared/value-objects/email/email';
+import { Name } from '../../shared/value-objects/user-info/name/name.vo';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 import { Password } from '../../../src/shared/value-objects/password/password';
 
 describe('BeneficiaryValidator', () => {

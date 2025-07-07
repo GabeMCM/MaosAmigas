@@ -2,15 +2,15 @@
 // [import { User } from '../entities/user'] → Importa a entidade User para validação
 import { User } from '../entities/user';
 // [import { Name } from '../../shared/value-objects/name/name'] → Importa o VO Name
-import { Name } from '../../shared/value-objects/name/name';
+import { Name } from '../../shared/value-objects/user-info/name/name.vo';
 // [import { Email } from '../../shared/value-objects/email/email'] → Importa o VO Email
-import { Email } from '../../shared/value-objects/email/email';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 // [import { Password } from '../../shared/value-objects/password/password'] → Importa o VO Password
 import { Password } from '../../shared/value-objects/password/password';
 // [import { BirthDate } from '../../shared/value-objects/birth-date/birth-date'] → Importa o VO BirthDate
-import { BirthDate } from '../../shared/value-objects/birth-date/birth-date';
+import { BirthDate } from '../../shared/value-objects/user-info/birth-date/birth-date.vo';
 // [import { Contact } from '../../shared/value-objects/contact/contact'] → Importa o VO Contact
-import { Contact } from '../../shared/value-objects/contact/contact';
+import { Contact } from '../../shared/value-objects/user-contact/user-contact.vo';
 
 // [type ValidationRule = (user: User) => string | null] → Define um tipo para regras de validação
 type ValidationRule = (user: User) => string | null;

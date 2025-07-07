@@ -1,13 +1,13 @@
 // tests/domain/entities/user.spec.ts
 import { User } from './user';
 import { Id } from '../../shared/value-objects/id/id';
-import { Name } from '../../shared/value-objects/name/name';
-import { Email } from '../../shared/value-objects/email/email';
+import { Name } from '../../shared/value-objects/user-info/name/name.vo';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 import { Password } from '../../shared/value-objects/password/password';
-import { BirthDate } from '../../shared/value-objects/birth-date/birth-date';
-import { Contact } from '../../shared/value-objects/contact/contact';
-import { ContactNumber } from '../../shared/value-objects/contact-number/contact-number';
-import { Address } from '../../shared/value-objects/address/address';
+import { BirthDate } from '../../shared/value-objects/user-info/birth-date/birth-date.vo';
+import { Contact } from '../../shared/value-objects/user-contact/user-contact.vo';
+import { ContactNumber } from '../../shared/value-objects/user-contact/contact-number/contact-number.vo';
+import { Address } from '../../shared/value-objects/user-contact/address/address.vo';
 
 describe('User Entity', () => {
   it('should create a user with all fields', () => {

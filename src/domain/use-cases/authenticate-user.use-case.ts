@@ -2,7 +2,7 @@
 // [import { UserRepository } from '../repositories/user.repository'] → Importa o repositório de usuários
 import { UserRepository } from '../repositories/user.repository';
 // [import { Email } from '../../shared/value-objects/email/email'] → Importa o VO Email
-import { Email } from '../../shared/value-objects/email/email';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 // [import { Password } from '../../shared/value-objects/password/password'] → Importa o VO Password
 import { Password } from '../../shared/value-objects/password/password';
 // [import { Token, TokenPayload } from '../../shared/value-objects/token/token'] → Importa o VO Token

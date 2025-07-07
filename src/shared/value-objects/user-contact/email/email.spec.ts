@@ -1,5 +1,5 @@
 // tests/core/value-objects/email.spec.ts
-import { Email } from './email';        // [DEPURAÇÃO] Importa a classe Email para testes
+import { Email } from './email.vo';        // [DEPURAÇÃO] Importa a classe Email para testes
 import validator from 'validator';                                   // [DEPURAÇÃO] Importa lib de validação
 
 describe('Email Value Object', () => {                               // [DEPURAÇÃO] Suite de testes para Value Object Email

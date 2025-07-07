@@ -1,5 +1,5 @@
 // tests/core/value-objects/number-of-contact.spec.ts
-import { ContactNumber } from './contact-number'; // [DEPURAÇÃO] Classe sob teste
+import { ContactNumber } from './contact-number.vo'; // [DEPURAÇÃO] Classe sob teste
 
 describe('ContactNumber Value Object', () => {                    // [DEPURAÇÃO] Suite de testes
   // Testes para números válidos

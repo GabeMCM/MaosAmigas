@@ -6,17 +6,17 @@ import { BeneficiaryRepository } from '../repositories/beneficiary.repository';
 // [import { validateBeneficiary } from '../validators/beneficiary.validator'] → Importa o validador de beneficiário
 import { validateBeneficiary } from '../validators/beneficiary.validator';
 // [import { Name } from '../../shared/value-objects/name/name'] → Importa o VO Name
-import { Name } from '../../shared/value-objects/name/name';
+import { Name } from '../../shared/value-objects/user-info/name/name.vo';
 // [import { Cpf } from '../../shared/value-objects/cpf/cpf'] → Importa o VO Cpf
-import { Cpf } from '../../shared/value-objects/cpf/cpf';
+import { Cpf } from '../../shared/value-objects/user-info/cpf/cpf.vo';
 // [import { BirthDate } from '../../shared/value-objects/birth-date/birth-date'] → Importa o VO BirthDate
-import { BirthDate } from '../../shared/value-objects/birth-date/birth-date';
+import { BirthDate } from '../../shared/value-objects/user-info/birth-date/birth-date.vo';
 // [import { Contact } from '../../shared/value-objects/contact/contact'] → Importa o VO Contact
-import { Contact } from '../../shared/value-objects/contact/contact';
+import { Contact } from '../../shared/value-objects/user-contact/user-contact.vo';
 // [import { Id } from '../../shared/value-objects/id/id'] → Importa o VO Id
 import { Id } from '../../shared/value-objects/id/id';
 import { Password } from '../../shared/value-objects/password/password';
-import { Email } from '../../shared/value-objects/email/email';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 
 // [export interface CreateBeneficiaryInput] → Define a interface de entrada para o caso de uso
 export interface CreateBeneficiaryInput {

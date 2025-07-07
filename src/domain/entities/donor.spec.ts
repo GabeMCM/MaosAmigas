@@ -1,8 +1,8 @@
 // tests/domain/entities/donor.spec.ts
 import { Donor } from './donor';
 import { Id } from '../../shared/value-objects/id/id';
-import { Name } from '../../shared/value-objects/name/name';
-import { Email } from '../../shared/value-objects/email/email';
+import { Name } from '../../shared/value-objects/user-info/name/name.vo';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 import { Password } from '../../shared/value-objects/password/password';
 
 describe('Donor Entity', () => {

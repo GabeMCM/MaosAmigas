@@ -2,9 +2,9 @@
 import { authenticateUser } from '../../../src/domain/use-cases/authenticate-user.use-case';
 import { UserRepository } from '../../../src/domain/repositories/user.repository';
 import { User } from '../../../src/domain/entities/user';
-import { Email } from '../../../src/shared/value-objects/email/email';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 import { Password } from '../../../src/shared/value-objects/password/password';
-import { Name } from '../../../src/shared/value-objects/name/name';
+import { Name } from '../../shared/value-objects/user-info/name/name.vo';
 import { Id } from '../../../src/shared/value-objects/id/id';
 import * as bcrypt from 'bcrypt';
 

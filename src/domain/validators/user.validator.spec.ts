@@ -2,11 +2,11 @@
 import { validateUser } from '../../../src/domain/validators/user.validator';
 import { User } from '../../../src/domain/entities/user';
 import { Id } from '../../../src/shared/value-objects/id/id';
-import { Name } from '../../../src/shared/value-objects/name/name';
-import { Email } from '../../../src/shared/value-objects/email/email';
+import { Name } from '../../shared/value-objects/user-info/name/name.vo';
+import { Email } from '../../shared/value-objects/user-contact/email/email.vo';
 import { Password } from '../../../src/shared/value-objects/password/password';
-import { BirthDate } from '../../../src/shared/value-objects/birth-date/birth-date';
-import { Contact } from '../../../src/shared/value-objects/contact/contact';
+import { BirthDate } from '../../shared/value-objects/user-info/birth-date/birth-date.vo';
+import { Contact } from '../../shared/value-objects/user-contact/user-contact.vo';
 
 describe('UserValidator', () => {
   it('should return no errors for a valid user', () => {
